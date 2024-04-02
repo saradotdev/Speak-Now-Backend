@@ -1,0 +1,8 @@
+opencv-python
+deepface
+moviepy
+librosa
+tensorflow
+numpy
+matplotlib
+flask
