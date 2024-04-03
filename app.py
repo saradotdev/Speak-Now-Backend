@@ -71,5 +71,11 @@ def delete_video():
 
 
 
+@app.route("/", methods=["GET"])
+def home():
+    return jsonify({"message": "Server is running successfully"})
+
+
+
 if __name__ == "__main__":
     app.run(debug=False)
