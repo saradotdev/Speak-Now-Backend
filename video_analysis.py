@@ -1,4 +1,6 @@
 import os
+os.environ['DISPLAY'] = ':0'
+os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = '1'
 import cv2 # for capturing and reading video
 from deepface import DeepFace # for analyzing facial expressions in video frames
 from moviepy.editor import VideoFileClip # for extracting audio from video
