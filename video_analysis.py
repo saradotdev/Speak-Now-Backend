@@ -1,4 +1,5 @@
 import os
+os.environ['OPENCV_HEADLESS'] = '1'
 import cv2 # for capturing and reading video
 from deepface import DeepFace # for analyzing facial expressions in video frames
 from moviepy.editor import VideoFileClip # for extracting audio from video
