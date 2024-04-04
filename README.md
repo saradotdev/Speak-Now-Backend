@@ -1,1 +1,3 @@
 # Speak-Now-Backend
+
+The backend repository for “Speak Now”, a web-based AI-powered software application that amalgamates emotion recognition and speech emotion recognition using raw video data to provide actionable insight into a user’s body language and vocal delivery and suggest useful tips as needed to improve the user’s performance. The user can choose to record or upload a video of them speaking and the system then presents an analysis of key performance indicators such as emotion expression, voice modulation, confidence, and nervousness. It integrates a user-friendly interface, and the implementation of effective AI and ML models for emotion and voice recognition.
