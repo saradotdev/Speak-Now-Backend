@@ -12,12 +12,14 @@ Emotions Associated with Confidence:
 * Angry: An angry and passionate public speaker can also be classified as confident.
 """
 
+
 def average_emotion_level(list):
     sum = 0
     for i in list:
         sum += i
     average = sum / len(list)
     return average
+
 
 fear_levels = []
 disgust_levels = []
@@ -28,13 +30,13 @@ neutral_levels = []
 angry_levels = []
 
 for i in facial_expression_data:
-    fear_levels.append(i['emotion']['fear'])
-    disgust_levels.append(i['emotion']['disgust'])
-    sad_levels.append(i['emotion']['sad'])
+    fear_levels.append(i["emotion"]["fear"])
+    disgust_levels.append(i["emotion"]["disgust"])
+    sad_levels.append(i["emotion"]["sad"])
 
-    happy_levels.append(i['emotion']['happy'])
-    neutral_levels.append(i['emotion']['neutral'])
-    angry_levels.append(i['emotion']['angry'])
+    happy_levels.append(i["emotion"]["happy"])
+    neutral_levels.append(i["emotion"]["neutral"])
+    angry_levels.append(i["emotion"]["angry"])
 
 # level of emotions on average
 average_fear_level = average_emotion_level(fear_levels)
@@ -45,5 +47,9 @@ average_happy_level = average_emotion_level(happy_levels)
 average_neutral_level = average_emotion_level(neutral_levels)
 average_angry_level = average_emotion_level(angry_levels)
 
-nervousness_in_expressions = average_fear_level + average_disgust_level + average_sad_level
-confidence_in_expressions = average_happy_level + average_neutral_level + average_angry_level
+nervousness_in_expressions = (
+    average_fear_level + average_disgust_level + average_sad_level
+)
+confidence_in_expressions = (
+    average_happy_level + average_neutral_level + average_angry_level
+)
