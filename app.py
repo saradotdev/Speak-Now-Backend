@@ -66,8 +66,8 @@ def upload_video():
         nervousness = nervousness_in_expressions + nervousness_in_speech
         confidence = confidence_in_expressions + confidence_in_speech
 
-        nervousness = round(nervousness, 2)
-        confidence = round(confidence, 2)
+        nervousness = int(nervousness)
+        confidence = int(confidence)
 
         return jsonify({"nervousness": nervousness, "confidence": confidence})
 
