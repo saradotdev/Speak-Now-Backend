@@ -3,7 +3,7 @@ import librosa  # for audio loading and extracting features
 import tensorflow as tf  # for loading the machine learning model
 import numpy as np  # for normalizing and reshaping audio features
 
-model_relative_path = "../backend/Emotion_Voice_Detection_Model.h5"
+model_relative_path = "Emotion_Voice_Detection_Model.h5"
 model_absolute_path = os.path.abspath(model_relative_path)
 model = tf.keras.models.load_model(model_absolute_path)  # load the model
 
