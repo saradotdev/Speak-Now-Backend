@@ -6,4 +6,3 @@ moviepy
 librosa
 tensorflow
 numpy
-tf-keras
